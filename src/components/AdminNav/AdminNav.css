@@ -1,0 +1,41 @@
+/* Admin Navbar (Fully independent from templatemo) */
+
+.admin-nav-container {
+    width: 100%;
+    background: #19446a;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.admin-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.admin-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    
+    padding: 10px 25px;
+    border-radius: 6px;
+
+    background: rgba(255,255,255,0.1);
+    transition: 0.2s;
+    white-space: nowrap;   /* ← prevents text from splitting into 2 lines */
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+    background: #bbd142;
+    color: black;
+}
+
+.admin-nav-link.last {
+    margin-left: 10px;
+}

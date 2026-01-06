@@ -1,0 +1,147 @@
+/* ===============================
+   HERO BANNER
+================================ */
+
+.main-banner {
+  width: 100%;
+  position: relative;
+}
+
+.banner-slide {
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* dark overlay */
+.banner-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* banner images */
+.item-1 {
+  background-image: url("../../../public/assets/images/Banner5.jpg");
+}
+
+.item-2 {
+  background-image: url("../../../public/assets/images/Banner6.jpg");
+}
+
+.item-3 {
+  background-image: url("../../../public/assets/images/Banner7.jpg");
+}
+
+/* ===============================
+   WHY US
+================================ */
+
+.why-us {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 34px;
+}
+
+.section-desc {
+  margin: 10px auto 40px;
+  max-width: 600px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.why-card {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.why-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #f35525;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #f06d45;
+}
+
+/* ===============================
+   PROCESS
+================================ */
+
+.process {
+  padding: 80px 20px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.step {
+  background: #fff;
+  padding: 18px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 34px;
+  background: #f35525;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.cta-btn:hover {
+  background: #f06d45;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 767px) {
+  .banner-slide {
+    height: 520px;
+  }
+
+  .why-us h2,
+  .process h2 {
+    font-size: 28px;
+  }
+}

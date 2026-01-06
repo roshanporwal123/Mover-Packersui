@@ -1,0 +1,213 @@
+/* ===============================
+   PAGE
+================================ */
+.admin-orders-page {
+  padding: 40px 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+/* ===============================
+   LIST
+================================ */
+.orders-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ===============================
+   ORDER CARD – SMART WIDTH GRID
+   Details column expands fully
+================================ */
+.order-card {
+  display: grid;
+  grid-template-columns:
+    auto            /* Order ID + Status */
+    minmax(0, 1fr)  /* Consignment Details (FULL WIDTH) */
+    auto            /* Approve / Delete */
+    auto;           /* Tracking Update */
+
+  gap: 16px;
+  align-items: flex-start;
+
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 45px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   COLUMN 1 – ORDER ID + STATUS
+================================ */
+.order-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+}
+
+.order-id {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  word-break: break-all;
+}
+
+/* STATUS */
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.status.approved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.pending {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+/* ===============================
+   COLUMN 2 – CONSIGNMENT DETAILS
+================================ */
+.order-body {
+  word-break: break-word;
+}
+
+.order-body p {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.order-body strong {
+  color: #111827;
+}
+
+.desc {
+  background: #f3f4f6;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  margin-top: 6px;
+}
+
+/* ===============================
+   COLUMN 3 – ACTION BUTTONS
+================================ */
+.order-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 140px;
+}
+
+.order-action-buttons .btn {
+  width: 100%;
+}
+
+/* ===============================
+   COLUMN 4 – TRACKING UPDATE
+================================ */
+.order-tracking {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.order-tracking label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.order-tracking textarea {
+  resize: none;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+}
+
+.order-tracking textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.btn.success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.btn.warning {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.btn.danger {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ===============================
+   RESPONSIVE – TABLET & MOBILE
+================================ */
+@media (max-width: 1100px) {
+  .order-card {
+    grid-template-columns: 1fr;
+  }
+
+  .order-action-buttons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .order-action-buttons .btn {
+    flex: 1;
+  }
+
+  .order-tracking {
+    min-width: 100%;
+  }
+}

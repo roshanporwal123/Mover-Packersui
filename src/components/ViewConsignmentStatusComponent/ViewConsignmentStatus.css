@@ -1,0 +1,93 @@
+
+/* Page wrapper */
+.track-consignment {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Card */
+.track-card {
+  width: 100%;
+  max-width: 600px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid var(--primary);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.track-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Labels */
+.track-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Bold titles */
+.track-card p span {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Status */
+.status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: var(--success);
+}
+
+/* Info text */
+.info {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Empty state */
+.no-data {
+  text-align: center;
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .track-consignment {
+    padding: 1rem;
+  }
+
+  .track-card {
+    padding: 1.2rem;
+  }
+
+  .track-card p {
+    font-size: 0.9rem;
+  }
+}
+.status {
+  display: block;          /* 🔥 forces new line */
+  margin-top: 6px;
+  padding: 6px 10px;
+  background: #e0f2fe;
+  color: #0369a1;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: fit-content;
+}

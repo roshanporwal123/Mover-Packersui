@@ -1,0 +1,124 @@
+/* ===============================
+   PAGE
+================================ */
+.user-subcategory-page {
+  padding: 50px 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* ===============================
+   TITLE
+================================ */
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+
+/* ===============================
+   GRID
+================================ */
+.subcategory-grid {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* ===============================
+   CARD
+================================ */
+.subcategory-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.subcategory-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   LINK RESET
+================================ */
+.subcategory-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ===============================
+   IMAGE
+================================ */
+.subcategory-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.subcategory-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.subcategory-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   CONTENT
+================================ */
+.subcategory-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.subcategory-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   CTA TEXT
+================================ */
+.view-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #A52A2A;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+.subcategory-card:hover .view-text {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 26px;
+  }
+
+  .subcategory-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subcategory-content h2 {
+    font-size: 18px;
+  }
+}

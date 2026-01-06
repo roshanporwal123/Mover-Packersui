@@ -1,0 +1,87 @@
+/* ===============================
+   PAGE
+================================ */
+.view-charity-page {
+  padding: 40px 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1e293b;
+}
+
+/* ===============================
+   GRID
+================================ */
+.charity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* ===============================
+   CARD
+================================ */
+.charity-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.charity-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============================
+   HEADER
+================================ */
+.charity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.transaction-id {
+  font-size: 14px;
+  font-weight: 600;
+  color: #A52A2A;
+  background: #eff6ff;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ===============================
+   BODY
+================================ */
+.charity-body p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.charity-body strong {
+  color: #A52A2A;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+  .charity-card {
+    padding: 18px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}

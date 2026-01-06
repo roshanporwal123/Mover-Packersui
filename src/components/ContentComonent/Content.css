@@ -1,0 +1,9 @@
+.slider{
+  display:flex;
+  flex-wrap: wrap;
+}
+.slider img{
+  width: 600px;
+  padding: 5px;
+  margin: 5px;
+}

@@ -1,0 +1,26 @@
+.user-dashboard {
+  padding: 70px 10%;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.dash-card {
+  background: #fff;
+  padding: 35px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  transition: 0.4s ease;
+}
+
+.dash-card:hover {
+  background: #ff6347;
+  color: #fff;
+  transform: translateY(-10px);
+}
